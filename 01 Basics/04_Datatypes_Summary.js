@@ -31,3 +31,42 @@ const func = function () {
 };
 
 console.log(typeof id1);
+
+/*Return type of variables in JavaScript
+1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
+
+2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object
+       */
+
+//    JavaScript is a dynamically typed language.
+
+// ------------------------Memory In Js--------------
+
+// Stack (Primitive) we get copy of declared variable , Heap (Non - Primitive) we get actual value refernce.
+
+let myName = "Adarsh Sharma";
+
+let name = "Aman Sharma";
+name = "Adarsh Sharma";
+console.log(name);
+
+let user = {
+  email: "ad@gmail.com",
+  upi: "user@ybl",
+};
+let user1 = user;
+
+user1.email = "kekou@gmail";
+
+console.log(user);
+console.log(user1);
